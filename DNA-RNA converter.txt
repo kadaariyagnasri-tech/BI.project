@@ -1,0 +1,15 @@
+dna = input("enter DNA sequence:").upper()
+rna = " "
+for base in dna:
+    if base == "A":
+        rna +="U"
+    elif base =="T":
+        rna += "A"
+    elif base =="G":
+        rna +="C"
+    elif base =="C":
+        rna +="G"
+    else:
+        print("invalid DNA sequence")
+        break
+    print("RNA sequence:",rna)
